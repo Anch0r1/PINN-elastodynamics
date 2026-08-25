@@ -78,7 +78,7 @@ FEM and PINN results:
 
 *Paper's reference (FEM + their PINN) for the same plot:*
 
-![Paper reference stress plots](results/paper_reference/paper_s_plots.png)
+![Paper reference stress plots](results/paper_reference/Paper_s_plots.png)
 
 The shape and sign of all three stress components line up well, showing that the model accurately captured the physics involved in this problem.
 
