@@ -9,9 +9,7 @@ plate under cyclic uni-axial tension).
 The original authors released a TensorFlow 1.x implementation
 ([Raocp/PINN-elastodynamics](https://github.com/Raocp/PINN-elastodynamics)), included
 here as `reference/train.py` for direct comparison. This repo is an independent
-rewrite in modern PyTorch, done as an undergraduate mechanical engineering research
-project under faculty supervision — not a lab's production codebase, and not a claim
-of a full reproduction of the paper's results.
+rewrite in modern PyTorch.
 
 ## What this solves
 
