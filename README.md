@@ -20,7 +20,7 @@ the corner, is pulled by a cyclic traction on one edge:
 Tn(t) = 0.5 * sin(2*pi*t/T0 + 1.5*pi) + 0.5,   T0 = 5 s,  t in [0, 10] s
 ```
 
-Plane stress, linear elastic material (E = 20 MPa, nu = 0.25). Instead of meshing
+Plane stress, linear elastic material (E = 20 , nu = 0.25, rho = 1.0). Instead of meshing
 the plate and solving with finite elements, a neural network is trained to directly
 output the displacement and stress fields (u, v, sigma11, sigma22, sigma12) at any
 point (x, y, t), by minimizing the residual of the governing PDEs, Hooke's law, and
