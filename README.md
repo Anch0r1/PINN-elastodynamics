@@ -92,7 +92,7 @@ yielding:
 ![Paper reference Von Mises plot](results/paper_reference/paper_von_mises.png)
 
 The period of oscillation matches the applied load correctly, but the peak
-magnitude undershoots the paper's reference by roughly 21%.
+magnitude undershoots the paper's reference by roughly 18%.
 
 
 **Stress evolution over the full simulation**, compared to the paper's own
