@@ -7,9 +7,8 @@ This covers the paper's plate-with-a-hole benchmark: a square plate with a circu
 hole in it, stretched by a cyclic load, solved with a PINN instead of FEM.
 
 The original authors' TensorFlow 1.x code is included here as `reference/train.py`
-for comparison. This is a from-scratch PyTorch rewrite done as a project under faculty supervision. It's not a full
-reproduction of the paper and isn't meant to be one, but the results are close
-enough to the paper's own FEM and PINN results to be a decent proof of concept.
+for comparison. This repository contains an independent PyTorch reimplementation. It's not a full
+reproduction of the paper and isn't meant to be one, but the implementation reproduces the main qualitative behaviour of the benchmark and achieves reasonable agreement with the paper's FEM and PINN results.
 
 ## The problem
 
@@ -80,10 +79,9 @@ FEM and PINN results:
 
 ![Paper reference stress plots](results/paper_reference/Paper_s_plots.png)
 
-The shape and sign of all three stress components line up well, showing that the model accurately captured the physics involved in this problem.
+The predicted stress distributions replicate the main shapes, signs, and temporal ordering of the reference results, indicating that the model captures the qualitative elastodynamic behaviour of the problem.
 
-**Von Mises stress history** at the point (0, 0.1), the location closest to
-yielding:
+**Von Mises stress history** at the point (0, 0.1):
 
 ![Von Mises history](results/von_mises_history.png)
 
